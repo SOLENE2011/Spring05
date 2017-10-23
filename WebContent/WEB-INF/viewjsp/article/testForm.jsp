@@ -16,17 +16,17 @@
 </head>
 <body>
 
-	<form:form action="/chap07/jsp/article/${article.id}"
+	<form:form action="/Spring05/jsp/article/${article.id}"
 		commandName="article" method="delete">
 		<input type="submit" value="삭제" />
 	</form:form>
 
-	<form:form action="/chap07/jsp/article/${article.id}"
+	<form:form action="/Spring05/jsp/article/${article.id}"
 		commandName="article" method="put">
 		<input type="submit" value="수정" />
 	</form:form>
 
-	<form:form action="/chap07/jsp/article" commandName="article"
+	<form:form action="/Spring05/jsp/article" commandName="article"
 		method="post">
 		<input type="submit" value="생성" />
 	</form:form>

@@ -15,12 +15,14 @@ public class ArticleController {
 		return "article/read";
 	}
 
+	// 삭제하기 위해 전송
 	@RequestMapping(value = "/article/{id}", method = RequestMethod.DELETE)
 	public String delete(@PathVariable("id") Integer id, Model model) {
 		model.addAttribute("article", new Article(id));
 		return "article/delete";
 	}
-
+	
+	// 입력하기 위해 전송
 	@RequestMapping(value = "/article/{id}", method = RequestMethod.PUT)
 	public String modify(@PathVariable("id") Integer id, Model model) {
 		model.addAttribute("article", new Article(id));
